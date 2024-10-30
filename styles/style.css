@@ -234,7 +234,7 @@ header {
     font-size: 20px;
     grid-column: 2/4;
 }
-.about__paragraph-margin {
+.about__paragraph {
     margin-bottom: 25px;
 }
 .footer {
