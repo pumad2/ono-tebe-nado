@@ -1,6 +1,6 @@
 header {
     display: grid;
-    margin: 96px 50px;
+    margin: 90px 50px 92px;
     align-items: center;
     grid-template-columns: 1fr min-content 1fr;
     font-size: 18px;
@@ -8,10 +8,12 @@ header {
 }
 .header__link {
     text-decoration: none;
+    border-bottom: 1px solid black;
 }
 .header__links-list {
     display: flex;
     gap: 34px;
+    margin-top: 5px;
 }
 .header__links-list-item {
     list-style: circle;
@@ -22,15 +24,16 @@ header {
 }
 .header__link_active {
     text-decoration: none;
-    border-bottom: 1px solid black;
 }
 .header__logo {
-    display: block;
-    position: absolute;
+    display: block; 
     justify-self: center;
+    text-decoration: none;
 }
 .header__logo-image {
-    width: 135px;
+    width: 139px;
+    padding-left: 2px;
+    padding-top: 2px;
 }
 .address {
     font-style: normal;
@@ -41,6 +44,14 @@ header {
     grid-column: 3/4;
     align-self: center;
     justify-self: end;
+}
+.address__link {
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+.address__text {
+    line-height: 24px;
 }
 .cover {
     position: relative;
@@ -90,7 +101,7 @@ header {
     position: relative;
     display: flex;
     padding-right: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 49px;
     align-items: flex-start;
     justify-content: space-between;
     z-index: 2;
@@ -114,16 +125,19 @@ header {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 22px;
+    cursor: pointer;
 }
 .lots {
-    margin: 180px 24px 185px;
+    margin: 180px 24px 181px;
 }
 .lots__heading {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 40px;
     margin-left: 40px;
-    margin-bottom: 27px;
+    margin-bottom: 25px;
+    position: relative;
+    bottom: 2px;
 }
 .lots__card-list {
     display: grid;
@@ -146,27 +160,19 @@ header {
     align-content: space-between;
     padding: 50px 40px;
     color: white;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    position: relative;
 }
 .card_type_film {
-    position: relative;
     background-image: url("../images/card-lot-01.jpg");
-    background-size: cover;
-    background-position: center;
-    z-index: 0;
 }
 .card_type_book {
-    position: relative;
     background-image: url("../images/card-lot-02.jpg");
-    background-size: cover;
-    background-position: center;
-    z-index: 0;
 }
 .card_type_picture {
-    position: relative;
     background-image: url("../images/card-lot-03.jpg");
-    background-size: cover;
-    background-position: center;
-    z-index: 0;
 }
 .card__title {
     font-weight: 700;
@@ -184,7 +190,7 @@ header {
 }
 .lots__look-more-link {
     display: block;
-    margin-top: 29px;
+    margin-top: 30px;
     margin-left: 40px;
     font-weight: 400;
     font-size: 20px;
@@ -200,9 +206,8 @@ header {
 .about__column {
     display: grid;
     column-gap: 25px;
-    row-gap: 5px;
+    row-gap: 8px;
     grid-template-columns: repeat(3, 1fr);
-   
 }
 .about__logo {
     background-color: black;
@@ -211,11 +216,10 @@ header {
     display: grid;
     place-items: center;
     place-self: center;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 .about__logo-image {
     width: 148px;
-    
 }
 .about__title {
     text-transform: uppercase;
@@ -223,11 +227,15 @@ header {
     font-size: 40px;
     align-self: center;
     grid-column: 2/3;
+    margin-top: 10px;
 }
 .about__text {
     font-weight: 400;
     font-size: 20px;
     grid-column: 2/4;
+}
+.about__paragraph-margin {
+    margin-bottom: 25px;
 }
 .footer {
     margin: 0 50px 88px;
@@ -235,6 +243,10 @@ header {
     font-size: 18px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+.footer__address {
+    margin-left: 1px;
+    margin-top: -1px;
 }
 .footer__menu {
     justify-self: center;
@@ -246,6 +258,9 @@ header {
     text-align: center;
 }
 .footer__menu-link_active {
+    text-decoration: none;
+}
+.footer__menu-link {
     text-underline-offset: 4px;
 }
 .footer__social-list {
