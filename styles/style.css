@@ -1,6 +1,6 @@
 header {
     display: grid;
-    margin: 0 50px 96px;
+    margin: 96px 50px;
     align-items: center;
     grid-template-columns: 1fr min-content 1fr;
     font-size: 18px;
@@ -8,9 +8,6 @@ header {
 }
 .header__link {
     text-decoration: none;
-}
-.header__menu {
-    
 }
 .header__links-list {
     display: flex;
@@ -30,7 +27,7 @@ header {
 .header__logo {
     display: block;
     position: absolute;
-    justify-self: center;  
+    justify-self: center;
 }
 .header__logo-image {
     width: 135px;
@@ -43,7 +40,7 @@ header {
     padding-right: 36px;
     grid-column: 3/4;
     align-self: center;
-    justify-self: end; 
+    justify-self: end;
 }
 .cover {
     position: relative;
@@ -107,7 +104,7 @@ header {
     
 }
 .bet-button {
-    padding: 12px 31px; 
+    padding: 12px 31px;
     font-family: Raleway, sans-serif;
     border-color: white;
     border-width: 1px;
@@ -154,7 +151,7 @@ header {
     position: relative;
     background-image: url("../images/card-lot-01.jpg");
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     z-index: 0;
 }
 .card_type_book {
@@ -178,7 +175,7 @@ header {
     z-index: 2;
     text-decoration-line: underline;
     text-decoration-thickness: 1px;
-    text-underline-offset: 3px; 
+    text-underline-offset: 3px;
 }
 .card__text {
     font-weight: 400;
@@ -248,9 +245,6 @@ header {
 .footer__menu-list-item {
     text-align: center;
 }
-.footer__menu-link {
-
-}
 .footer__menu-link_active {
     text-underline-offset: 4px;
 }
@@ -259,12 +253,6 @@ header {
     display: flex;
     gap: 48px;
     justify-content: end;
-}
-.footer__social-list-item {
-
-}
-.footer__social-link {
-
 }
 .footer__social-icon {
     width: 48px;
